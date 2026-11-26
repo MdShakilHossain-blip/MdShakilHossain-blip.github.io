@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Md Shakil Hossain</title>
+<meta name="description" content="Md Shakil Hossain – final-year hydraulic engineering student in Saint Petersburg, Russia. Ports, breakwaters, river-mouth sedimentation; seeking internships and a master's in coastal, river and water resources engineering.">
+<meta name="author" content="Md Shakil Hossain">
+<meta property="og:title" content="Md Shakil Hossain – Hydraulic Engineering">
+<meta property="og:description" content="Final-year hydraulic engineering student: ports, breakwaters and river-mouth sedimentation.">
+<meta property="og:type" content="profile">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+/* VOICE everyday-professional: a young hydraulic engineer's calling card, calm and exact
+   IDEA a coastal engineering drawing: breakwater cross-section, sea on one side, harbour on the other
+   PICTURE full-width drawn breakwater with armour stones, rolling sea waves and a quiet harbour with a ship
+   COLOUR deep sea blue band, white page, sand and armour-stone grey, buoy orange accent
+   TYPE Archivo (titles) + Source Sans 3 (text)
+   LAYOUT name and contact across the top of the sea band, drawing beneath at full bleed; sections below in two columns, stacked on phones */
+:root{color-scheme:light dark;
+--bg:light-dark(#ffffff,#071822);
+--ink:light-dark(#0c1d2a,#e6eef4);
+--muted:light-dark(#4a5d6b,#9fb3c2);
+--sea:light-dark(#0d4b6e,#0a3550);
+--sea2:light-dark(#0f6a8f,#0d4a6b);
+--sand:light-dark(#efe3c6,#2a2618);
+--panel:light-dark(#f2f7fa,#0d2533);
+--line:light-dark(#d5e1e9,#1d3a4c);
+--buoy:#ff6a2b}
+:root[data-theme=light]{color-scheme:light}
+:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 "Source Sans 3",system-ui,sans-serif;overflow-x:clip}
+a{color:inherit}
+h1,h2,h3{font-family:Archivo,system-ui,sans-serif;line-height:1.05;letter-spacing:-.02em;margin:0}
+.wrap{max-width:1240px;margin:0 auto}
+.band{padding-block:clamp(32px,5vw,72px);padding-inline:max(5vw,16px)}
+nav{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--sea) 94%,transparent);backdrop-filter:blur(6px);color:#fff}
+nav .wrap{display:flex;align-items:center;gap:20px;padding:12px max(5vw,16px);flex-wrap:wrap}
+nav .mark{font-family:Archivo,system-ui,sans-serif;font-weight:800;text-decoration:none;font-size:18px;margin-right:auto}
+nav .links{display:flex;gap:18px;flex-wrap:wrap}
+nav .links a{text-decoration:none;font-size:15px;opacity:.85}
+nav .links a:hover,nav .links a:focus-visible{opacity:1;text-decoration:underline}
+.hero{background:var(--sea);color:#fff;padding-bottom:0}
+.hero .top{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:32px;align-items:end}
+.mono{width:112px;height:112px;border-radius:50%;background:var(--buoy);display:grid;place-items:center;font:800 38px Archivo,system-ui,sans-serif;color:#fff;border:4px solid #fff;margin-bottom:22px}
+.hero h1{font-size:clamp(40px,7vw,76px);font-weight:800}
+.hero .role{font-size:clamp(18px,2.2vw,22px);margin:14px 0 0;max-width:42em;color:#d6ecf6}
+.hero .where{margin:8px 0 0;color:#a9d3e6;font-size:16px}
+.cta{display:flex;flex-direction:column;gap:10px;align-items:stretch}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:10px 20px;border-radius:999px;font-weight:600;text-decoration:none;border:2px solid #fff;color:#fff;white-space:nowrap;cursor:pointer;font:600 16px "Source Sans 3",sans-serif;background:transparent}
+.btn.solid{background:#fff;color:var(--sea)}
+.btn:focus-visible{outline:3px solid var(--buoy);outline-offset:2px}
+.fig{position:relative;height:clamp(220px,32vw,400px);margin-top:36px;margin-inline:calc(-1*max(5vw,16px))}
+.fig svg{position:absolute;inset:0;width:100%;height:100%;display:block}
+.caption{background:var(--sand);color:var(--ink);font-size:14px;padding:10px max(5vw,16px);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.caption b{font-weight:600}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(11em,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-top:28px}
+.facts div{background:var(--bg);padding:16px 18px}
+.facts strong{display:block;font:700 clamp(24px,3vw,32px) Archivo,system-ui,sans-serif;color:var(--sea2)}
+.facts span{color:var(--muted);font-size:15px}
+section h2{font-size:clamp(30px,4vw,44px);margin-bottom:22px}
+.two{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(24px,5vw,72px)}
+.about p{margin:0 0 14px;max-width:66ch}
+.lead{font-size:20px}
+.alt{background:var(--panel)}
+.tl{list-style:none;margin:0;padding:0;border-left:3px solid var(--sea2)}
+.tl li{position:relative;padding:0 0 26px 26px}
+.tl li:last-child{padding-bottom:0}
+.tl li::before{content:"";position:absolute;left:-10px;top:6px;width:17px;height:17px;border-radius:50%;background:var(--bg);border:3px solid var(--sea2)}
+.tl li.now::before{background:var(--buoy);border-color:var(--buoy)}
+.tl .when{font-weight:600;color:var(--sea2);font-size:15px;white-space:nowrap}
+.tl h3{font-size:21px;margin:4px 0 2px}
+.tl .org{color:var(--muted);margin:0 0 6px}
+.tl p{margin:0;max-width:64ch}
+.thesis{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,22em),1fr));gap:20px}
+.card{background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:24px}
+.alt .card{background:var(--bg)}
+.card .tag{display:inline-block;font-size:14px;font-weight:600;color:#fff;background:var(--sea2);border-radius:999px;padding:3px 12px;margin-bottom:12px}
+.card h3{font-size:22px;margin-bottom:10px}
+.card p{margin:0 0 10px}
+.card .ru{color:var(--muted);font-size:15px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.chips li{border:1px solid var(--line);background:var(--panel);border-radius:999px;padding:6px 14px;font-size:15px}
+.langs{display:grid;gap:10px;margin-top:6px}
+.lang{display:grid;grid-template-columns:7.5em minmax(0,1fr);gap:12px;align-items:center}
+.lang .bar{height:10px;border-radius:5px;background:var(--line);overflow:hidden}
+.lang .bar i{display:block;height:100%;background:var(--sea2);border-radius:5px}
+.lang small{grid-column:2;color:var(--muted);font-size:14px;margin-top:-6px}
+.hon{list-style:none;padding:0;margin:0;display:grid;gap:14px}
+.hon li{display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:start}
+.hon .yr{font:700 18px Archivo,system-ui,sans-serif;color:var(--buoy);white-space:nowrap;min-width:3em}
+.contact{background:var(--sea);color:#fff}
+.contact h2{color:#fff}
+.contact p{color:#d6ecf6;max-width:56ch}
+.mails{display:grid;gap:12px;margin-top:20px;max-width:640px}
+.mail{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);border-radius:14px;padding:12px 16px}
+.mail span{font-size:14px;color:#a9d3e6;display:block}
+.mail b{font-size:18px;overflow-wrap:anywhere}
+.copy{min-height:44px;padding:8px 16px;border-radius:999px;border:2px solid #fff;background:transparent;color:#fff;font:600 15px "Source Sans 3",sans-serif;cursor:pointer}
+.copy:focus-visible{outline:3px solid var(--buoy);outline-offset:2px}
+footer{background:var(--sea);color:#a9d3e6;font-size:14px;padding:18px max(5vw,16px);border-top:1px solid rgba(255,255,255,.15)}
+@media(max-width:820px){.two{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:600px){.hero .top{grid-template-columns:minmax(0,1fr)}.cta{flex-direction:row;flex-wrap:wrap}.cta .btn{flex:1 1 10em}nav .links{gap:12px}nav .links a{font-size:14px}.mono{width:84px;height:84px;font-size:28px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.wave{animation:none!important}}
+@keyframes drift{from{transform:translateX(0)}to{transform:translateX(-200px)}}
+.wave{animation:drift 9s linear infinite}
+.wave.b{animation-duration:14s}
+</style>
+</head>
+<body>
+
+<nav aria-label="Sections">
+  <div class="wrap">
+    <a class="mark" href="#top">Md Shakil Hossain</a>
+    <div class="links">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero band" id="top">
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <div class="mono" aria-hidden="true">MSH</div>
+        <h1>Md Shakil Hossain</h1>
+        <p class="role">Final-year hydraulic engineering student working on ports, breakwaters and river-mouth sedimentation. Looking for internships and a master's in coastal, river and water resources engineering.</p>
+        <p class="where">Saint Petersburg, Russia · from Pabna, Bangladesh</p>
+      </div>
+      <div class="cta">
+        <a class="btn solid" href="#contact">Contact me</a>
+        <a class="btn" href="#research">See my research</a>
+      </div>
+    </div>
+    <div class="fig" aria-label="Drawing of a rubble-mound breakwater: open sea with waves on the left, armour stones over a rock core, calm harbour with a ship on the right">
+      <svg id="bw" viewBox="0 0 1200 400" preserveAspectRatio="xMidYMax slice" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0d4b6e"/><stop offset="1" stop-color="#3d8fb3"/></linearGradient>
+          <linearGradient id="seaG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1b7aa3"/><stop offset="1" stop-color="#063550"/></linearGradient>
+          <linearGradient id="harb" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a8cb2"/><stop offset="1" stop-color="#0a4563"/></linearGradient>
+          <linearGradient id="stoneG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#b9c0c4"/><stop offset="1" stop-color="#6f7a80"/></linearGradient>
+          <pattern id="coreP" width="14" height="14" patternUnits="userSpaceOnUse"><rect width="14" height="14" fill="#8a7d63"/><circle cx="4" cy="4" r="2.6" fill="#a29577"/><circle cx="11" cy="10" r="2.2" fill="#776b53"/></pattern>
+        </defs>
+        <rect width="1200" height="400" fill="url(#sky)"/>
+        <circle cx="980" cy="70" r="34" fill="#ffd9a8" opacity=".9"/>
+        <!-- seabed -->
+        <path d="M0 360 C300 350 600 368 1200 352 L1200 400 L0 400Z" fill="#e3d2a8"/>
+        <!-- open sea (left) -->
+        <rect x="0" y="210" width="470" height="160" fill="url(#seaG)"/>
+        <g clip-path="inset(0)">
+          <path class="wave" d="M0 212 q50 -26 100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 L700 260 L0 260Z" fill="#2a8fbb"/>
+          <path class="wave b" d="M0 226 q50 -18 100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 L700 270 L0 270Z" fill="#1c76a0" opacity=".9"/>
+        </g>
+        <!-- harbour (right) -->
+        <rect x="760" y="244" width="440" height="125" fill="url(#harb)"/>
+        <path d="M760 244 H1200" stroke="#9fd4ea" stroke-width="2" opacity=".6"/>
+        <!-- ship -->
+        <g transform="translate(930 196)">
+          <path d="M0 40 L180 40 L164 62 L12 62Z" fill="#11232f"/>
+          <rect x="18" y="22" width="40" height="18" fill="#ff6a2b"/>
+          <rect x="62" y="22" width="40" height="18" fill="#e6eef4"/>
+          <rect x="106" y="22" width="36" height="18" fill="#2a6c8c"/>
+          <rect x="146" y="6" width="24" height="34" fill="#e6eef4"/>
+          <rect x="150" y="12" width="16" height="6" fill="#11232f"/>
+        </g>
+        <!-- breakwater core -->
+        <path d="M380 362 L560 196 L680 196 L860 362Z" fill="url(#coreP)"/>
+        <!-- armour stones -->
+        <g id="stones"></g>
+        <!-- crest wall -->
+        <path d="M600 168 L660 168 L668 200 L592 200Z" fill="#d9dedf"/>
+        <path d="M600 168 L612 168 L606 200 L592 200Z" fill="#aeb6ba"/>
+        <!-- light / buoy -->
+        <rect x="626" y="132" width="10" height="36" fill="#fff"/>
+        <rect x="622" y="122" width="18" height="12" fill="#ff6a2b"/>
+        <!-- design water level -->
+        <path d="M0 210 H1200" stroke="#fff" stroke-dasharray="8 8" stroke-width="1.5" opacity=".5"/>
+      </svg>
+    </div>
+  </div>
+</header>
+<div class="caption"><span><b>Sea side</b> · armour layer over a rock core</span><span>Rubble-mound breakwater, the subject of my student article</span><span><b>Harbour side</b></span></div>
+
+<section class="band" id="about">
+  <div class="wrap two about">
+    <div>
+      <h2>About me</h2>
+      <div class="facts">
+        <div><strong>2027</strong><span>Bachelor's graduation (July)</span></div>
+        <div><strong>3.64 / 4</strong><span>Diploma CGPA, Civil Technology</span></div>
+        <div><strong>4</strong><span>Languages I speak</span></div>
+      </div>
+    </div>
+    <div>
+      <p class="lead">I'm a final-year Civil Engineering student specialising in Hydraulic Engineering Construction at Admiral Makarov State University of Maritime and Inland Shipping in Saint Petersburg. I study on a Russian Government Scholarship.</p>
+      <p>I grew up in Pabna, Bangladesh, on the Padma River, where riverbank erosion and sedimentation shape people's lives. That's what drew me to hydraulic engineering. Today my work focuses on port protective structures, approach channels and how sediment fills them.</p>
+      <p>Before coming to Russia I earned a four-year Diploma in Civil Technology and worked as an engineer on a construction site in Dhaka. I'm now looking for internships and a master's programme in coastal, river and water resources engineering, in Europe, Asia or the Middle East.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band alt" id="research">
+  <div class="wrap">
+    <h2>Research and writing</h2>
+    <div class="thesis">
+      <article class="card">
+        <span class="tag">Bachelor's thesis · 2027</span>
+        <h3>Protective structures and the approach channel of a river-mouth port</h3>
+        <p>Design of breakwaters and the approach channel for a port at a river mouth, taking sediment infilling of the channel into account. Case study: the Luga River mouth in the Gulf of Finland.</p>
+        <p class="ru">Methods: wave and sediment input data, breakwater armour sizing, channel infilling estimate, comparison of layout options.</p>
+      </article>
+      <article class="card">
+        <span class="tag">Student article · 2026</span>
+        <h3>Design of a port breakwater</h3>
+        <p class="ru">«Проектирование оградительного мола морского порта»</p>
+        <p>Compares rock and concrete tetrapod armour for a rubble-mound breakwater, sizing the armour units with the Hudson formula and Russian and international design codes.</p>
+        <p class="ru">Supervisor: P.V. Belyakov, PhD (Eng.), Associate Professor, Department of Waterways and Hydrographic Surveys.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="experience">
+  <div class="wrap two">
+    <div>
+      <h2>Experience</h2>
+      <p style="color:var(--muted);max-width:30ch;margin:0">Site and design-office work in Dhaka, before my studies in Russia.</p>
+    </div>
+    <ul class="tl">
+      <li>
+        <span class="when">Dec 2021 – Mar 2022</span>
+        <h3>Engineer</h3>
+        <p class="org">Vikas Infracreation (Pvt.) Ltd., Dhaka</p>
+        <p>Worked on Dhaka Metro Rail (MRT Line-6) construction works. Prepared and checked construction drawings, carried out quality checks of materials and completed works, and coordinated with site teams and suppliers.</p>
+      </li>
+      <li>
+        <span class="when">Feb 2020 – Apr 2020</span>
+        <h3>Industrial Attachment Trainee (Civil)</h3>
+        <p class="org">KHAN BD Engineering &amp; Architectural Consultant, Dhaka</p>
+        <p>Eighth-semester industrial attachment of my diploma: building design, construction drawings and site supervision.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="band alt" id="education">
+  <div class="wrap two">
+    <div>
+      <h2>Education</h2>
+      <p style="color:var(--muted);max-width:30ch;margin:0">Three universities in Russia, after a diploma in Bangladesh.</p>
+    </div>
+    <ul class="tl">
+      <li class="now">
+        <span class="when">2024 – 2027</span>
+        <h3>Bachelor's, Civil Engineering (08.03.01)</h3>
+        <p class="org">Admiral Makarov State University of Maritime and Inland Shipping, Saint Petersburg</p>
+        <p>Profile: Hydraulic Engineering Construction. Expected graduation July 2027.</p>
+      </li>
+      <li>
+        <span class="when">2023 – 2024</span>
+        <h3>Civil Engineering, first year</h3>
+        <p class="org">Saint Petersburg Mining University</p>
+      </li>
+      <li>
+        <span class="when">2022 – 2023</span>
+        <h3>Preparatory Faculty</h3>
+        <p class="org">Peoples' Friendship University of Russia (RUDN), Moscow</p>
+        <p>Russian language and engineering foundation year.</p>
+      </li>
+      <li>
+        <span class="when">2016 – 2021</span>
+        <h3>Diploma in Engineering, Civil Technology</h3>
+        <p class="org">Pabna Polytechnic Institute, Bangladesh</p>
+        <p>CGPA 3.64 / 4.00.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="band" id="skills">
+  <div class="wrap two">
+    <div>
+      <h2>Skills</h2>
+      <ul class="chips">
+        <li>Hydraulic engineering</li><li>Coastal and port engineering</li><li>Breakwater design</li><li>Dredging and channel infilling</li><li>AutoCAD</li><li>Construction drawings</li><li>Quality control on site</li><li>Structural analysis</li><li>Russian and international design codes</li>
+      </ul>
+      <h2 style="font-size:28px;margin:34px 0 16px">Languages</h2>
+      <div class="langs" id="langs"></div>
+    </div>
+    <div>
+      <h2>Honours and activities</h2>
+      <ul class="hon">
+        <li><span class="yr">2023</span><span><b>2nd place, Koresh Belt Wrestling World Cup</b>, 74 kg, Moscow</span></li>
+        <li><span class="yr">2022</span><span><b>Russian Government Scholarship</b> for full-time study in Russia</span></li>
+        <li><span class="yr">2025</span><span>Took part in the «Встреча культур» (Meeting of Cultures) international festival</span></li>
+        <li><span class="yr">2021</span><span>Rover Scout</span></li>
+        <li><span class="yr">2018</span><span>AutoCAD training, BMET</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="band contact" id="contact">
+  <div class="wrap">
+    <h2>Contact</h2>
+    <p>I'm happy to hear about internships, master's positions and research projects in coastal, river and port engineering.</p>
+    <div class="mails">
+      <div class="mail"><div><span>University email</span><b>24102037@stud.gumrf.ru</b></div><button class="copy" data-v="24102037@stud.gumrf.ru">Copy</button></div>
+      <div class="mail"><div><span>Personal email</span><b>mdshakilsanaullah@gmail.com</b></div><button class="copy" data-v="mdshakilsanaullah@gmail.com">Copy</button></div>
+    </div>
+  </div>
+</section>
+<footer><div class="wrap">Md Shakil Hossain · Hydraulic Engineering, Saint Petersburg · 2026</div></footer>
+
+<script>
+{
+  const langs=[["Bengali",100,"Native"],["English",88,"C1 university certificate"],["Russian",80,"Language of my degree"],["Hindi / Urdu",55,"Conversational"]];
+  document.getElementById('langs').innerHTML=langs.map(([n,w,t])=>`<div class="lang"><span>${n}</span><div class="bar"><i style="width:${w}%"></i></div><small>${t}</small></div>`).join('');
+
+  let s=42;const r=()=>(s=s*16807%2147483647)/2147483647;
+  const g=document.getElementById('stones');let out='';
+  const slope=(x0,y0,x1,y1,n)=>{for(let i=0;i<n;i++){const t=i/(n-1);const x=x0+(x1-x0)*t+(r()-.5)*6,y=y0+(y1-y0)*t+(r()-.5)*6;const rad=14+r()*6;const pts=[];const k=6+Math.floor(r()*2);for(let j=0;j<k;j++){const a=j/k*Math.PI*2+r()*.4;const rr=rad*(.8+r()*.3);pts.push((x+Math.cos(a)*rr).toFixed(1)+','+(y+Math.sin(a)*rr*.8).toFixed(1))}out+=`<polygon points="${pts.join(' ')}" fill="url(#stoneG)" stroke="#4d585e" stroke-width="1.2"/>`}};
+  slope(386,356,566,198,15);slope(408,360,580,206,14);
+  slope(854,356,674,198,15);slope(832,360,664,206,14);
+  for(let x=566;x<=676;x+=22){slope(x,198,x+1,198,1)}
+  g.innerHTML=out;
+
+  for(const b of document.querySelectorAll('.copy')){
+    b.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(b.dataset.v);b.textContent='Copied'}catch(e){b.textContent='Select the text to copy'}setTimeout(()=>b.textContent='Copy',2000)});
+  }
+}
+</script>
+</body>
+</html>
